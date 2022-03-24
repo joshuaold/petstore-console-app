@@ -11,6 +11,9 @@ using Xunit;
 
 namespace Unit.Tests
 {
+    /// <summary>
+    /// See explanation on PetCommands.cs on an explanation about this unit test
+    /// </summary>
     public class PetCommandsTests
     {
         [Theory]
@@ -32,6 +35,7 @@ namespace Unit.Tests
             await commands.LogPetstorePets("");
 
             // Assert
+            // I was trying to test the Console.WriteLine inside the LogPetstorePets to check the order being printed out but I couldn't find a way of doing it
             var stringWriter = new StringWriter();
             Console.SetOut(stringWriter);
 

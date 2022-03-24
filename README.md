@@ -10,7 +10,7 @@ Unit.Tests is where unit tests can be found
 ### INSTRUCTIONS ON RUNNING THE APP
 
 1. Open Terminal/CommandLine/Powershell
-2. Navigate to unit tests project by executing "cd .\petstore-console-app\Petstore\Unit.Tests"
+2. Navigate to the unit tests project by executing "cd .\petstore-console-app\Petstore\Unit.Tests"
 3. Run "dotnet test"
 4. Check for any errors in any of the test cases
 5. If no errors are found, navigate to Petstore.ConsoleApp by executing "cd ..\Petstore.ConsoleApp"

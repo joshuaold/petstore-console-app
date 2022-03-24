@@ -16,6 +16,14 @@ namespace Petstore.ConsoleApp
             _petstoreService = petstoreService;
         }
 
+        /// <summary>
+        /// To create a unit test for this, we could just return groupedPetsByCategory and unit test the return value
+        /// But in doing so, I don't think it is really unit testing the method
+        /// If we do it, it looks more like we are unit testing the LINQ method which doesn't seem like it's an appropriate unit test for the application
+        /// We could move the foreach loop into a different method though but I opted not to because of the explanation above
+        /// </summary>
+        /// <param name="status"></param>
+        /// <returns></returns>
         public async Task LogPetstorePets(string status)
         {
             var pets = await _petstoreService.GetPetsByStatus(status);
