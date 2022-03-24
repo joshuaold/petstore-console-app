@@ -8,8 +8,6 @@ namespace Core.PetAggregate
     {
         public string Name { get; set; }
 
-        public string Status { get; set; }
-
         public Category Category { get; set; }
     }
 }
